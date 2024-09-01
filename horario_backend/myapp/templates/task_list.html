@@ -1,0 +1,7 @@
+<h1>Task List</h1>
+<ul>
+    {% for task in object_list %}
+    <li>{{ task.actividad }} - {{ task.dia }} - {{task.hora}}</li>
+    {% endfor %}
+</ul>
+<a href="{% url 'task_create' %}">Create new task</a>
