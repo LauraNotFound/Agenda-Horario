@@ -35,12 +35,13 @@
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
-
                             <div class="modal-body">
                                 <table>
                                     <tr>
                                         <th class="col-dia">
                                             <label for="dia">Día:</label>
+                                        </th>
+                                        <th class="col-dia-options">
                                             <select id="dia">
                                                 <option value="lunes">Lunes</option>
                                                 <option value="martes">Martes</option>
@@ -55,6 +56,8 @@
                                     <tr>
                                         <th class="col-hora">
                                             <label for="hora">Hora:</label>
+                                        </th>
+                                        <th class="col-hora-options">
                                             <select id="hora">
                                                 <option value="06:00">06:00 AM</option>
                                                 <option value="07:00">07:00 AM</option>
@@ -80,6 +83,8 @@
                                     <tr>
                                         <th class="col-color">
                                             <label for="color">Color:</label>
+                                        </th>
+                                        <th class="col-color-options">
                                             <select id="color">
                                                 <option value="color">Selecciona tu color</option>
                                                 <option value="#641e16"
@@ -127,7 +132,9 @@
                                     </tr>
                                     <tr>
                                         <th class="col-actividad">
-                                            <label for="activity" class="label-activity">Ingresar la actividad: </label>
+                                            <label for="activity" class="label-activity">Actividad: </label>
+                                        </th>
+                                        <th class="col-actividad-text">
                                             <!-- <input type="text" id="activity"> -->
                                             <textarea name="" id="activity"></textarea>
                                         </th>
@@ -135,7 +142,7 @@
                                 </table>
                             </div>
                             <div class="modal-footer">
-                                <button class="btn-guardar" type="submit" id="saveActivity">Guardar</button>
+                                <button class="btn-guardar" type="submit" id="saveActivity">GUARDAR ACTIVIDAD</button>
                             </div>
                         </div>
                     </div>
@@ -148,25 +155,25 @@
         <div class="container">
             <div class="row  justify-content-md-center">
                 <div class="col encabezado">Horario</div>
-                <div class="col casilla" style="background-color: white;">
+                <div class="col casilla" style="border: none;">
                     <div class="dia">Lunes</div>
                 </div>
-                <div class="col casilla" style="background-color: white;">
+                <div class="col casilla" style="border: none;">
                     <div class="dia">Martes</div>
                 </div>
-                <div class="col casilla" style="background-color: white;">
+                <div class="col casilla" style="border: none;">
                     <div class="dia">Miércoles</div>
                 </div>
-                <div class="col casilla" style="background-color: white;">
+                <div class="col casilla" style="border: none;">
                     <div class="dia">Jueves</div>
                 </div>
-                <div class="col casilla" style="background-color: white;">
+                <div class="col casilla" style="border: none;">
                     <div class="dia">Viernes</div>
                 </div>
-                <div class="col casilla" style="background-color: white;">
+                <div class="col casilla" style="border: none;">
                     <div class="dia">Sábado</div>
                 </div>
-                <div class="col casilla" style="background-color: white;">
+                <div class="col casilla" style="border: none;">
                     <div class="dia">Domingo</div>
                 </div>
             </div>

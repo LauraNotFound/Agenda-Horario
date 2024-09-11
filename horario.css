@@ -50,8 +50,10 @@ main{
 }
 
 .casilla{
-    background-color:#d3f3df;
-    border-radius: 5px;
+    border: 1px solid black;
+    /*background-color:#d3f3df;
+    border-radius: 5px;*/
+    height: 40px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -68,26 +70,13 @@ main{
     font-size: large;
 }
 
-/* Estilos del modal */
+/* ESTILOS DEL MODAL */
 
 .title-modal{
+    color: black;
     font-size:x-large;
     text-transform: uppercase;
     padding-left: 3%;
-}
-
-.col-dia, .col-hora, .col-color, .col-actividad{
-    padding-left: 8%;
-    padding-bottom: 5%;
-    display:flex;
-}
-
-.col-dia{
-    padding-top: 5%;
-}
-
-label{
-    padding-right: 3%;
 }
 
 .btn{
@@ -110,6 +99,7 @@ label{
 }
 
 .modal{
+    font-family: "Roboto Condensed", sans-serif;
     display: none;
     position: fixed;
     z-index: 1;
@@ -124,11 +114,8 @@ label{
 }
 
 .modal-header{
+    border: none;
     padding-right: 5%;
-}
-
-.modal-footer, .modal-header{
-    background-color:#d3f3df;
 }
 
 .modal-content{
@@ -145,43 +132,63 @@ label{
     font-size: large;
 }
 
-#dia, #hora, #color{
-    border-color: #d3f3df;
+label{
+    width: 100%;
+    text-align: right;
 }
 
-#activity{
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-color: #d3f3df;
+select, textarea{
+    width: 100%;
+    border: 1px solid #ccc;
+    display: inline-block;
+}
+select option:focus,
+select option:hover{
+    background-color: #888;
+    color: black;
+}
+
+.col-dia-options, .col-hora-options, .col-color-options, .col-actividad-text{
+    padding-right: 5%;
+}
+
+.col-dia, .col-hora, .col-color, .col-actividad{
+    padding-right: 3%;
+    width: 30%;
+    text-transform: uppercase;
+}
+
+.col-dia-options, .col-hora-options, .col-color-options, .col-dia, .col-hora, .col-color{
+    padding-bottom: 3%;
 }
 
 .btn-guardar{
     background-color: black;
+    width: 100%;
     font-size: large;
     color: white;
     border: none;
     border-radius: 5px;
     padding-top: 2%;
     padding-bottom: 2%;
-    padding-left: 3%;
-    padding-right: 3%;
 }
 
 .btn-guardar:hover, 
 .btn-guardar:focus{
-    color: white;
+    
     cursor: pointer;
 }
 
 .modal-footer{
-    padding-right: 5%;
-    padding-top: 3%;
-    padding-bottom: 3%;
+    border: none;
+    padding: 3% 5% 3% 5%;
 }
 
 @media screen and (max-width: 700px){
     .modal-content{
         width: 80%;
+    }
+    .title-modal, .btn-guardar, .col-dia-options, .col-hora-options, .col-color-options, .col-dia, .col-hora, .col-color, .col-actividad, .col-actividad-text{
+        font-size: medium;
     }
 }

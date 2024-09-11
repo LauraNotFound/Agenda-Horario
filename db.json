@@ -1,3 +1,25 @@
 {
-  "actividades": []
+  "actividades": [
+    {
+      "id": "c4df",
+      "dia": "martes",
+      "hora": "08:00",
+      "color": "#1b4f72",
+      "actividad": "Repasar Diseño de Software"
+    },
+    {
+      "id": "34a0",
+      "dia": "miercoles",
+      "hora": "08:00",
+      "color": "#7d6608",
+      "actividad": "Continuar con el desarrollo del proyecto personal."
+    },
+    {
+      "id": "a722",
+      "dia": "lunes",
+      "hora": "06:00",
+      "color": "color",
+      "actividad": ""
+    }
+  ]
 }
