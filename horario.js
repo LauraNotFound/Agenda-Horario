@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const selector = `.casilla[data-dia="${actividad.dia}"][data-hora="${actividad.hora}"]`;
         const casilla = document.querySelector(selector);
         if (casilla) {
-            casilla.innerHTML = `<span data-bs-toggle="tooltip" style="color: ${actividad.color}; cursor:pointer"; title="${actividad.actividad}">${actividad.actividad}</span>`;
+            casilla.innerHTML = `<span data-bs-toggle="tooltip" style="color: ${actividad.color}; margin: 0%; cursor:pointer"; title="${actividad.actividad}">${actividad.actividad}</span>`;
             var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
             var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
                 return new bootstrap.Tooltip(tooltipTriggerEl)
