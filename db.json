@@ -20,6 +20,20 @@
       "hora": "06:00",
       "color": "color",
       "actividad": ""
+    },
+    {
+      "id": "73f1",
+      "dia": "sabado",
+      "hora": "07:00",
+      "color": "#512e5f",
+      "actividad": "Ir a desayunar al comedor."
+    },
+    {
+      "id": "8e3c",
+      "dia": "miercoles",
+      "hora": "13:00",
+      "color": "#0b5345",
+      "actividad": "Lavandería y limpieza de habitación. En el caso de tener tiempo libre se puede realizar alguna actividad de ocio."
     }
   ]
 }

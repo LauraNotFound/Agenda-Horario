@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
             actividad: actividad
         };
 
-        fetch('http://localhost:3000/actividades', {
+        fetch('http://127.0.0.1:8000/api/tasks/', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function cargarActividades() {
-        fetch('http://localhost:3000/actividades')
+        fetch('http://127.0.0.1:8000/api/tasks/')
             .then(response => response.json())
             .then(data => {
                 data.forEach(actividad => mostrarActividad(actividad));

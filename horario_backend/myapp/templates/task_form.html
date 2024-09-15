@@ -1,7 +1,7 @@
-<h1>Create a New Task</h1>
+<h1>Crear nueva tarea</h1>
 <form method="post">
     {% csrf_token %}
     {{ form.as_p }}
-    <button type="submit">Save</button>
+    <button type="submit">Guardar</button>
 </form>
-<a href="{% url 'task_list' %}">Back to Task List</a>
+<a href="{% url 'task_list' %}">Regresar a la lista</a>

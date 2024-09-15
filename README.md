@@ -5,5 +5,9 @@ El proyecto utiliza HTML, CSS y JS. Para alojar los datos se utilizó un json qu
 
 Para levantar el Json: json-server db.json
 
+Backend hecho en django. 
+User: admin
+Password: 1234
+
 Por implementar: 
-- Un backend que se conecte con el frontend, alojado en la nube. 
+- Desplegar el backend

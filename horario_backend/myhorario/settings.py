@@ -43,6 +43,13 @@ INSTALLED_APPS = [
     'rest_framework',
 ]
 
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.AllowAny',
+    ]
+}
+
+
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
@@ -54,9 +61,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-# CORS_ALLOWED_ORIGINS = [
-#     'https://lauranotfound.github.io/Horario/#',
-# ]
+CORS_ALLOWED_ALL_ORIGINS = True # Esto permite todas las solicitudes desde cualquier origen
 
 ROOT_URLCONF = 'myhorario.urls'
 

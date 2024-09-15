@@ -4,8 +4,9 @@ from django.urls import reverse_lazy
 #Agregado para API
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
-
+from rest_framework.reverse import reverse
 from .models import Task
+
 #Agregado para API
 from .serializers import TaskSerializer
 
@@ -35,3 +36,9 @@ def task_list(request):
             serializer.save()
             return Response(serializer.data, status=201)
         return Response(serializer.errors, status=400)
+    
+@api_view(['GET'])
+def api_root(request, format=None):
+    return Response({
+        'tasks': reverse('task_list_api', request=request, format=format),
+    })
