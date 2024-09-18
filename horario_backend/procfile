@@ -1,0 +1,1 @@
+web: gunicorn myhorario.wsgi:application
