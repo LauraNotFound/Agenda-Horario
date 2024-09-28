@@ -1,9 +1,0 @@
-<h1>Lista de tareas</h1>
-<ul>
-    {% for task in object_list %}
-    <li>{{ task.actividad }} - {{ task.dia }} - {{task.hora}}</li>
-    {% endfor %}
-</ul>
-<a href="{% url 'task_create' %}">Crear nueva tarea</a>
-<p>También puedes acceder al admin desde aquí: <a href="http://127.0.0.1:8000/admin/">Panel Admin Django</a> </p>
-<p>Api Root: <a href="http://127.0.0.1:8000/api/">aquí</a></p>

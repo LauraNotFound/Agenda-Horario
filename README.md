@@ -9,5 +9,7 @@ Backend hecho en django.
 User: admin
 Password: 1234
 
+Para levantar el backend en local: python manage.py runserver
+
 Por implementar: 
 - Desplegar el backend
