@@ -213,6 +213,6 @@ select option:hover{
         width: 80%;
     }
     .title-modal, .btn-guardar, .col-dia-options, .col-hora-options, .col-color-options, .col-dia, .col-hora, .col-color, .col-actividad, .col-actividad-text{
-        font-size                                                                                                                                               : medium;
+        font-size: medium;
     }
 }
